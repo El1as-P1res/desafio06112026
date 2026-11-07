@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Entrar na sua conta</h1>
+    <form id="login-form" novalidate>
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" autocomplete="username" required>
+
+      <label for="password">Senha</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required minlength="4">
+
+      <p id="message" role="alert" aria-live="polite"></p>
+      <button type="submit" id="submit">Entrar</button>
+    </form>
+
+    <section id="result" hidden>
+      <h2>Login realizado</h2>
+      <p>Seu access_token:</p>
+      <code id="token"></code>
+      <button type="button" id="logout" class="secondary">Sair</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
