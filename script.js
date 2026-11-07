@@ -1,7 +1,7 @@
 // ===== CONFIGURAÇÃO =====
 // Coloque aqui a URL do endpoint de login da API usada na aula.
 // Se ficar vazio, o formulário roda em modo demonstração (token falso).
-const API_URL = "https://url-da-api-aqui.com/login";
+const API_URL = "";
 
 const form = document.getElementById("login-form");
 const message = document.getElementById("message");
